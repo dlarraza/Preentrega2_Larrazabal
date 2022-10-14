@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.logo-header {
+    margin-top: 1rem;
+}
+
+.logo-header {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+
+@media (min-width: 768px) {
+    .logo-header {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo-header {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo-header {
+        display: grid;
+        justify-content: center;
+        margin-bottom: .5rem;
+    }
+}
+
+.navegar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+@media (min-width: 768px) {
+    .navegar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .navegar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+nav ul li {
+    font-family: 'Karla', sans-serif;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+ul.navegar {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.centro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 1rem;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+@media (min-width: 576px) {
+    .centro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        row-gap: 1rem;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 768px) {
+    .centro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        row-gap: 1rem;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 992px) {
+    .centro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .centro {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1;
+        justify-content: space-evenly;
+        margin-top: 0rem;
+    }
+}
+
+.col-md-3 {
+    height: 100%;
+    width: 100%;
+}
+
+.col-md-3 img {
+    border-radius: 5px;
+}
+
+@media (min-width: 1200px) {
+    .col-md-3 img {
+        cursor: pointer;
+        filter: opacity(0.4) brightness(1);
+        border-radius: 5px;
+        transition: 0.3s linear;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .col-md-3 img:hover {
+        filter: opacity(1) brightness(1);
+    }
+}
+
+/* Footer de todas las paginas*/
+
+.social {
+    margin: 2rem 0rem;
+    padding: 0rem 0rem;
+}
+
+.social a {
+    padding-right: 2rem;
+}
+
+.social a:last-child {
+    padding-right: 0rem;
+}
+
+/* Ubicacion de Tiendas */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4;
+    row-gap: 0.5rem;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+@media (min-width: 576px) {
+    .grid {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid {
+        width: 100%;
+        margin: 1.5rem 0 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+}
+
+.grid-items {
+    height: 20rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.grid-items img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    border-radius: 0.3rem;
+}
+
+@media (min-width: 576px) {
+    .grid-items img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+.grid-items .complement {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .60);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+@media (min-width: 1200px) {
+    .grid-items .complement {
+        width: 0%;
+        height: 100%;
+        background: rgba(255, 255, 255, .80);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-items:hover .complement {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    grid-items .complement{
+        width: 0%;
+        height: 100%;
+        background: rgba(255, 255, 255, .81);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
+        .complement {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+        }
+
+        .complement h5 {
+            color: black;
+            border: 6px solid gray;
+            padding: 0.8em 1.9em;
+        }
+
+        /* Galerias */
+
+        .row-ga {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .row-ga .col {
+            flex: 33.3%;
+            width: auto;
+            overflow: hidden;
+            padding: 0 4px;
+            height: 100%;
+        }
+
+        .row-ga .col img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            filter: grayscale(1) brightness(1);
+            border-radius: 5px;
+            transition: 0.3s linear;
+        }
+
+        .row-ga .col img:hover {
+            filter: grayscale(0) brightness(1);
+        }
